@@ -27,7 +27,7 @@ options=(!libtool)
 source=("http://downloads.sourceforge.net/pfstools/$pkgname-$pkgver.tgz"
         "opencv3.patch" "force_imagemagick6.patch")
 sha256sums=('3dea4248e41bf433fe4760b0a11d138ad2d240f62db9e519bcb1d557c0593413'
-            '41f74339b7cc1dbfa2c7e1de62e81c7f423bc22cba9e27ee57b1d0b2ce15ce82'
+            '2933635f5b5be07fcede7c90baaad533cbbb87aa0e8bb8add530652da595bad6'
             'ab98716861280299d964496b3a3c35bb873d828060e353a4906efb465aba4674')
 
 prepare() {
