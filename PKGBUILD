@@ -11,17 +11,17 @@ license=('LGPL2.1')
 depends=('gcc-libs')
 provides=('pfscalibration' 'pfstmo')
 conflicts=('pfscalibration' 'pfstmo')
-optdepends=('freeglut: OpenGL image viewer pfsglview' 'glu: OpenGL image viewer pfsglview' \
-            'opencv: pfsalign' 'gtk3: pfsalign' \
-            'openexr: OpenEXR support' \
-            'imagemagick: ImageMagick support' \
-            'netpbm: PBM support' \
-            'dcraw: RAW support' \
-            'gsl: mantiuk08 tone mapping operator' \
+optdepends=('freeglut: OpenGL image viewer pfsglview' 'glu: OpenGL image viewer pfsglview'
+            'opencv: pfsalign' 'gtk3: pfsalign'
+            'openexr: OpenEXR support'
+            'imagemagick: ImageMagick support'
+            'netpbm: PBM support'
+            'dcraw: RAW support'
+            'gsl: mantiuk08 tone mapping operator'
             'fftw: durand02,fattal02,ferradans11 tone mapping operators')
-makedepends=('cmake' \
-             'openexr' 'libmagick6' 'libtiff' 'netpbm' \
-             'gsl' 'fftw' 'libexif' 'opencv'
+makedepends=('cmake'
+             'openexr' 'libmagick6' 'libtiff' 'netpbm'
+             'gsl' 'fftw' 'libexif' 'opencv' 'qt5-base'
              'freeglut' 'glu' 'gtkglext' 'gtk3')
 options=(!libtool)
 source=("http://downloads.sourceforge.net/pfstools/$pkgname-$pkgver.tgz"

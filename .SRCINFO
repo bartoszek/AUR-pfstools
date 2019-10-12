@@ -15,6 +15,7 @@ pkgbase = pfstools
 	makedepends = fftw
 	makedepends = libexif
 	makedepends = opencv
+	makedepends = qt5-base
 	makedepends = freeglut
 	makedepends = glu
 	makedepends = gtkglext
