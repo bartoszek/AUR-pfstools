@@ -45,16 +45,14 @@ prepare() {
 }
 
 build() {
-  mkdir -p "$srcdir/build"
-  cd "$srcdir/build"
-
-  cmake "$srcdir/$pkgname-$pkgver" \
+  cmake -S "$srcdir/$pkgname-$pkgver" -B build \
+    -DBUILD_SHARED_LIBS=ON \
     -DCMAKE_INSTALL_PREFIX=/usr
 
-  make
+  make -C build
 }
 
 package() {
   cd "$srcdir/build"
-  make DESTDIR="$pkgdir/" install
+  make -C build DESTDIR="$pkgdir" install
 }
