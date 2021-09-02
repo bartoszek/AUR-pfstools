@@ -45,6 +45,7 @@ prepare() {
 }
 
 build() {
+  export CXXFLAGS+=" --std=c++14"
   cmake -S "$srcdir/$pkgname-$pkgver" -B build \
     -DBUILD_SHARED_LIBS=ON \
     -DCMAKE_INSTALL_PREFIX=/usr
